@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap');
+* {
+  color: #050A30;
+  font-family:"Roboto","sans-serif";
+  box-sizing: border-box;
+}
+body {
+  background-color: #C3E0E5;
+  background-image: url("../images/fullStackBackground.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
+  p { 
+    list-style-position: inside;
+    text-align: justify;
+    font-size: 150%;
+  }
+  
+  .directions { 
+    list-style-position: inside;
+    text-align: justify;
+    font-size: 150%;
+  }
+  
+  a { 
+    list-style-position: inside;
+    text-align: left;
+    font-size: 100%;
+   }
+  
+  
+  ul {
+    list-style-position: inside;
+    text-align: left;
+    font-size: 200%;
+    list-style-type: "\261e";
+  }
+
+
+  h1 {
+      color: #000C66;
+    font-size: 250%;
+    text-align: center;
+  
+  }
+  
+  h2 {
+    color: #000C66;
+    text-decoration: wavy underline;
+    font-size: 200%;
+  
+  }
+  h3 {
+    color: #41729F;
+    font-size: 200%;
+  
+  }
+
+  h5 {
+    color: #5885AF;
+    font-size: 175%;
+  
+  }
+  .navButton {
+    padding: 16px;
+    background-color: #7EC8E3;
+    color:aliceblue;
+    border-radius: 4px;
+    font-size: 12px
+    }
+  .navButton:hover {
+    background-color: aliceblue;
+    color:#7EC8E3;
+    animation-name:enlarge;
+    animation-duration: 2s;
+  }
+  .box {
+    color: white;
+    font-size: 100%;
+    text-align: center;
+    padding:15px;
+    border-radius: 25px;
+    width: 50%;
+    animation-name: none;
+    animation-duration: 2s;
+    }
+  .box:hover {
+    animation-name: fade;
+    animation-duration: 2s;
+  }
+  .smallbox {
+    color: white;
+    font-size: 100%;
+    text-align: center;
+    padding:15px;
+    border-radius: 25px;
+    width: 50%;
+    animation-name: none;
+    animation-duration: 2s;
+    }
+  .smallbox:hover {
+    animation-name: fade;
+    animation-duration: 2s;
+  }
+    /* Colours for each box */
+  .box1 { background:#C3E0E5;}
+  .box2 { background:#5885AF;}
+  .box3 { background:#0000FF;}
+  .box4 { background:#7EC8E3;}
+  .box5 { background:#C3E0E5}
+  .box6 { background:#5885AF;}
+  .box7 { background:#0000FF;}
+  .box8 { background:#7EC8E3;}
+  .box9 { background:#C3E0E5}
+  .box10 { background:#5885AF;}
+  .box11 { background:#0000FF;}
+  .box12 { background:#7EC8E3;}
+  .box13 { background:#C3E0E5}
+  .box14 { background:#5885AF;}
+  .box15 { background:#0000FF;}
+  .container{
+    display: flex;
+    min-height: 60vh;
+    flex-wrap: wrap;
+    }
+  .smallcontainer{
+    display: flex;
+    min-height: 15vh;
+    flex-wrap: wrap;
+    }
+
+
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2s;
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+.blur {
+  -webkit-animation-name: blur;
+  -webkit-animation-duration: 2s;
+  animation-name:blur;
+  animation-duration: 2s;
+}
+
+.enlarge {
+  -webkit-animation-name: enlarge;
+  -webkit-animation-duration: 2s;
+  animation-name: enlarge;
+  animation-duration: 2s;
+}
+
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+
+.myPhoto{
+  animation-name: none;
+  align-content: center;
+}
+
+.myPhoto:hover{
+  animation-name: rotate;
+  animation-duration: 2s;
+}
+
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+@keyframes blur {
+  0% { filter: blur(0px);}
+  50% { filter: blur(5px);}
+  100% { filter: blur(0px);}
+}
+
+@keyframes enlarge {
+  0% { transform: scale(1);}
+  50% { transform: scale(1.1);}
+  100% { transform: scale(1);}
+}
+
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
